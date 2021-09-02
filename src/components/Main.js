@@ -15,9 +15,11 @@ class Main extends React.Component {
             <ol>
                    
 
-                    {beasts.map((beast, beastIndex) => (
+                    {beasts.map((beast, i) => (
                         <li key={beastIndex}>
                             <HornedBeast
+                            key={i}
+                            beastIndex={i}
                             title={beast.title}
                             image_url={beast.image_url}
                             />

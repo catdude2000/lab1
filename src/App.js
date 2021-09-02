@@ -15,6 +15,14 @@ class App extends React.Component {
       showModal: true,
     };
   }
+
+handleSelectBeast = beastIndex => {
+  this.setState({ 
+    SelectedBeast: data[beastIndex],
+  showModal: true,
+ });
+}
+
 handleClose = () => {
   this.setState({ showModal: false });
 };
