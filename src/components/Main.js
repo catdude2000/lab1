@@ -3,17 +3,21 @@ import HornedBeast from './HornedBeast';
 import data from '../data.json'
 
 class Main extends React.Component {
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
+    //         title='title'
+        
     render() {
-        return ( 
-            <div>
-<Aname title="title" />
-
-            </div>
-        )
+        let beast = data[0]
+        return <HornedBeast
+            title={beast.title}
+            image_url={beast.image_url}
+        />
     }
 }
 
-const Aname = (props) => <h1>This is a {props.title}</h1>
+// const Aname = (props) => <h1>This is a {props.title}</h1>
 
 export default Main
 
