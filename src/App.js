@@ -13,6 +13,7 @@ class App extends React.Component {
 
     this.state = {
       showModal: true,
+      // SelectedBeast=null 
     };
   }
 
@@ -35,7 +36,7 @@ render() {
       <SelectedBeast 
       beast={this.state.SelectedBeast}
         show={this.state.showModal}
-        handlClose={this.handleClose}
+        handleClose={this.handleClose}
         />
       <Footer />
     </div>
