@@ -7,9 +7,9 @@ class Main extends React.Component {
         super(props);
 
         this.state = {
-            title:'title',
+            title: this.props.title,
             hornedBeasts: [
-                {title: props.title}
+                {title: this.props.title}
             ]
         }
     }
