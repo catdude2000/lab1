@@ -3,38 +3,48 @@ import HornedBeast from './HornedBeast';
 import data from '../data.json'
 
 class Main extends React.Component {
+handleSubmit = (event) => {
 
+    // prevent actually submitting
+    event.PreventDefault();
+
+    console.log(event.target.elements.hornCount.value);
+}
     // constructor(props) {
     //     super(props);  
     //     }
-    
     render() {
         let beasts=data;
         return (
             <>
+            <Container as ="main"></Container>
             <Form>
                 <Form.Group>
-
+                    <Form.Label>How many horns?</Form.Label>
+                    <Form.Control as="select" name="hornCount">
+                        <option value="">All</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </Form.Control>
                 </Form.Group>
             </Form>
             <ol>
-                   
-                    {beasts.map((beast, i) => (
-                       <li>
-                            <HornedBeast
-                            key={i}
-                            beastIndex={i}
-                            handleSelectBeast={this.props.handleSelectBeast}
-                            title={beast.title}
-                            image_url={beast.image_url}
-                            />
-                        </li>
-                            ))}
-    
+                {beasts.map((beast, i) => (
+                    <li>
+                        <HornedBeast
+                        key={i}
+                        beastIndex={i}
+                        handleSelectBeast={this.props.handleSelectBeast}
+                        title={beast.title}
+                        image_url={beast.image_url}
+                        />
+                    </li>
+                    ))}
             </ol>    
           </>  
-        )
-        
+          </Container>
+        )  
 }
 }             
 
