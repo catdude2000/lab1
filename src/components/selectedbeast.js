@@ -4,7 +4,8 @@ import { Modal } from 'react-bootstrap';
 class SelectedBeast extends React.Component {
     render() {
         return (
-            <modal show={true}>
+            <modal show={this.props.show}
+            onHide={this.props.handleClose}>
                 <Modal.Dialog>
                     <Modal.Header CloseButton></Modal.Header>
                     <Modal.Title>Test!</Modal.Title>
