@@ -8,7 +8,7 @@ class HornedBeast extends React.Component {
         this.state = {
             favorites: 0,
         };
-        }
+    }
         handleCardClick=() => {
             let currentFavorites = this.state.favorites;
             this.setState({ favorites: currentFavorites + 1});

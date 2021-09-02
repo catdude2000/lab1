@@ -3,9 +3,10 @@ import Header from './components/header'
 import Main from './components/Main'
 import Footer from './components/footer'
 import data from './data.json'
+import React from 'react';
 
-
-function App() {
+class App extends React.Component {
+render() {
   return (
     <div className="App">
       <Header />
@@ -14,6 +15,7 @@ function App() {
       <Footer />
     </div>
   );
-  }
+}
+}
 
 export default App;
