@@ -9,7 +9,7 @@ class Main extends React.Component {
         this.state = {
             title:'title',
             hornedBeasts: [
-                {title: props.HornedBeast}
+                {title: props.title}
             ]
         }
     }
