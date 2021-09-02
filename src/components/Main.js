@@ -11,6 +11,12 @@ class Main extends React.Component {
     render() {
         let beasts=data;
         return (
+            <>
+            <Form>
+                <Form.Group>
+
+                </Form.Group>
+            </Form>
             <ol>
                    
                     {beasts.map((beast, i) => (
@@ -26,7 +32,9 @@ class Main extends React.Component {
                             ))}
     
             </ol>    
+          </>  
         )
+        
 }
 }             
 
