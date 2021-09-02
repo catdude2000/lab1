@@ -74,30 +74,30 @@ Number and name of feature: #1, Display images
 
 Estimate of time needed to complete: 15 minutes
 
-Start time:
+Start time:??
 
-Finish time:
+Finish time:??
 
-Actual time needed to complete:
+Actual time needed to complete:hours
 
 
 Number and name of feature: #2, Allow users to vote on their favorite beast
 
-Estimate of time needed to complete:
+Estimate of time needed to complete:??
 
-Start time:
+Start time:??
 
-Finish time:
+Finish time:??
 
-Actual time needed to complete:
+Actual time needed to complete:45 minutes
 
 
 Number and name of feature: #3, Bootstrap
 
-Estimate of time needed to complete:
+Estimate of time needed to complete:??
 
-Start time:
+Start time:??
 
-Finish time:
+Finish time:??
 
-Actual time needed to complete:
+Actual time needed to complete:45 minutes
