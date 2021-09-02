@@ -8,8 +8,9 @@ import data from './data.json'
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Main beast={data}/>
+      <Header />
+      <Main beasts={data} />
+      <SelectedBeast />
       <Footer />
     </div>
   );
