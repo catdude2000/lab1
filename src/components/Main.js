@@ -3,17 +3,32 @@ import HornedBeast from './HornedBeast';
 import data from '../data.json'
 
 class Main extends React.Component {
+    constructor(props) {
+        super(props);
+        
+        this.state = {
+            // start with all
+            filteredBeasts: this.props.beasts,
+        };
+    }
 handleSubmit = (event) => {
 
     // prevent actually submitting
     event.PreventDefault();
 
-    console.log(event.target.elements.hornCount.value);
+    let hornCount = parseInt(event.target.elements.hornCount.value)
+    console.log(hornCount);
+        this.setState({
+            filteredBeasts: this.props.filter(beast => {
+                return beast.horns === hornCount;
+                };
+            });
+        })
+    }
 }
-    // constructor(props) {
-    //     super(props);  
-    //     }
+
     render() {
+        let beasts = this.state.filteredBeasts;
         let beasts=data;
         return (
             <>
