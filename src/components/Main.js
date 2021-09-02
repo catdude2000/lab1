@@ -20,7 +20,7 @@ handleSubmit = (event) => {
 }
 handleChange = event => {
     let hornCount = parseInt(event.target.value);
-    this.filterBeasts(hornCount);
+    this.filteredBeasts(hornCount);
 }
 filteredBeasts = (hornCount) => {
 
