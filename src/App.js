@@ -30,8 +30,10 @@ render() {
   return (
     <div className="App">
       <Header />
-      <Main beasts={data} />
+      <Main beasts={data}
+      handleSelectBeast={this.handleSelectBeast} />
       <SelectedBeast 
+      beast={this.state.SelectedBeast}
         show={this.state.showModal}
         handlClose={this.handleClose}
         />

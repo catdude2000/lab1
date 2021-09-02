@@ -9,10 +9,13 @@ class HornedBeast extends React.Component {
             favorites: 0,
         };
     }
+    // have to use an arrow func
         handleCardClick=() => {
             let currentFavorites = this.state.favorites;
             this.setState({ favorites: currentFavorites + 1});
+            this.props.handleSelectBeast(this.props.beastIndex);
         }
+
     render() {
         return (
             <Card

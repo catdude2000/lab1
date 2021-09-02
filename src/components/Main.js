@@ -3,23 +3,22 @@ import HornedBeast from './HornedBeast';
 import data from '../data.json'
 
 class Main extends React.Component {
-    // constructor(props) {
-    //     super(props);
 
-            
-        // }
+    // constructor(props) {
+    //     super(props);  
+    //     }
     
     render() {
         let beasts=data;
         return (
             <ol>
                    
-
                     {beasts.map((beast, i) => (
-                        <li key={beastIndex}>
+                       <li>
                             <HornedBeast
                             key={i}
                             beastIndex={i}
+                            handleSelectBeast={this.props.handleSelectBeast}
                             title={beast.title}
                             image_url={beast.image_url}
                             />
