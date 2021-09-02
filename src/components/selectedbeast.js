@@ -6,6 +6,7 @@ class SelectedBeast extends React.Component {
     render() {
         console.log(this.props)
         let beast= this.props.beast
+        // if we have nothing to show quit early and show nothing
         if (!beast) {
             return null;
     }
