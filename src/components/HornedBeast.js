@@ -6,7 +6,9 @@ class HornedBeast extends React.Component {
         return (
             <Card>
                 <Card.Body>
+                    <Card.Img src={this.props.image_url}/>
                     <Card.Title>{this.props.title}</Card.Title>
+                    <Card.Text>{this.props.description}</Card.Text>
                 </Card.Body>
             </Card>
             // <div>
